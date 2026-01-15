@@ -6,10 +6,11 @@ int main() {
 	int i = 23, pid;
 	pid = fork();
 	if (pid > 0) {
-		sleep(1); //should appear delayed
-		printf("parent: %d\n", i);
+		sleep(5); //should appear delayed
+		printf("parent pid%d : i=%d\n", pid, i);
 		wait(NULL);
 	} else {
-		printf("child: %d\n", i);
+		i = i +1;
+		printf("child pid%d : i=%d\n", pid, i);
 	}
 }
