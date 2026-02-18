@@ -1,4 +1,3 @@
-#define BUFFER_SIZE 10
 #include "module.c"
 
 int main() {
