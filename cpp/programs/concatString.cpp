@@ -9,5 +9,5 @@ std::string d = a.append(b);
 int main() {
     std::cout << c;
     std::cout << d;
-    return 0;
+    return 1;
 }
